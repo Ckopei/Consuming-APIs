@@ -36,7 +36,7 @@ $(document).on("click", "button", function () {
             let gifUrlAnimated = response.data[i].images.fixed_width.url;
             let rating = response.data[i].rating;
             //create div to hold each gif and it's rating
-            let gifDiv = $("<div class='gifsDiv'>")
+            let gifDiv = $("<div class='gifsDiv row'>")
             var img = $("<img class='gifs img-responsive'>")
             img.attr("src", gifUrlStatic);
             img.attr("data-state", "still");
@@ -44,6 +44,10 @@ $(document).on("click", "button", function () {
             img.attr("data-animate", gifUrlAnimated);
             gifDiv.append(img);
             $(".gifsHere").append(gifDiv);
+            //now to prepend the rating to the gifDiv.
+            let p = $("<p>");
+            p.text("Maturity Rating: " + rating);
+            gifDiv.append(p)
         };
     })
 })
@@ -65,7 +69,13 @@ $(document).on("click", "img", function(){
 })
 
 // 5. Under every gif, display its rating (PG, G, so on).
-//    * This data is provided by the GIPHY API.
-//    * Only once you get images displaying with button presses should you move on to the next step.
+//done under the gif section
+
 
 // 6. Add a form to your page that takes a value from a user input box and adds it to your `topics` array. Then make a function call that takes each topic in the array and remakes the buttons on the page.
+$("#submitBtn").on("click", function(){
+    event.preventDefault()
+    let newVal = $("#newVal").val().trim()
+    shows.push(newVal)
+    appendButtons()
+})
