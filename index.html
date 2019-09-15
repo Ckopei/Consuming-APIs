@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Giphy Search!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Giphy Search!</title>
 </head>
+
 <body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="assets/javascript/script.js"></script>
+    <div class="buttonsHere row">
+        <!--Buttons will append here in their own row-->
+    </div>
+
+    <div class="row">
+
+        <!--col for gifs to be loaded into-->
+        <div class="col-9 gifsHere">
+
+        </div>
+        <!-- col for my search bar and maturity settings-->
+        <div class="col-3">
+
+
+            <!--search bar-->
+            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+            <!--this is my selector for rating-->
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control-lg" id="exampleFormControlSelect1">
+                    <option>Y</option>
+                    <option>G</option>
+                    <option>PG</option>
+                    <option>PG-13</option>
+                    <option>R</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
