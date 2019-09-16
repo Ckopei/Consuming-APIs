@@ -19,13 +19,14 @@ body {
 .container {
     width: 100%
 }
-.col-9 {
-    -ms-flex: 0 0 75%;
-    flex: 0 0 90%;
-    max-width: 90%;
+
+body {
+    margin: 0 2em 0 2em;
 }
 .col-3 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 10%;
-    max-width: 10%;
+    margin-top: 2em;
+}
+
+#submitbtn {
+    margin-top: 1em;
 }

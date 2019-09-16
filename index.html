@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div>
         <!--Buttons will append here in their own row-->
         <div class="buttonsHere row"></div>
         <!--this row will contain the rest of the page-->
@@ -20,20 +20,23 @@
             <!--col for gifs to be loaded into-->
             <div class="col-9 gifsHere"></div>
             <!-- col for my search bar and maturity settings-->
-            <div class="col-3">
-                <!--search bar-->
-                <input id="newVal" class="form-control-lg" type="text" placeholder="Add a button!">
+            <div class="col-3 mt-2">
                 <!--this is my selector for rating-->
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Rating</label>
-                    <select class="form-control-lg" id="exampleFormControlSelect1">
-                        <option>Y</option>
-                        <option>G</option>
-                        <option>PG</option>
-                        <option>PG-13</option>
-                        <option>R</option>
-                    </select>
-                </div>
+                        <p>Please select a rating for your searches when you press a button.</p>
+                        <label for="exampleFormControlSelect1">Rating</label>
+                        <select class="form-control-lg rating" id="exampleFormControlSelect1">
+                            <option>Y</option>
+                            <option>G</option>
+                            <option>PG</option>
+                            <option>PG-13</option>
+                            <option>R</option>
+                        </select>
+                    </div>
+                <p>Type anything in the form and press submit to create a new search button!</p>
+                <!--search bar-->
+                <input id="newVal" class="form-control-lg" type="text" placeholder="Add a button!">
+                
                 <input type="submit" id="submitBtn" class="btn btn-dark" value="Submit">
             </div>
         </div>

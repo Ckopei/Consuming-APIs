@@ -23,7 +23,8 @@ $(document).ready(function () {
         console.log(show)
         // ask how to target rating
         // var rating = $(document)
-        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=wBCi3R0zS2IBZBegGU2ND9oIM6BWFETs&q=" + show + "&limit=10&offset=0&rating=PG-13&lang=en"
+        var rating = $(".rating").val().trim()
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=wBCi3R0zS2IBZBegGU2ND9oIM6BWFETs&q="+show+"&limit=10&offset=0&rating="+rating +"&lang=en"
 
         //ajax call for newly built url based on button clicked.
         $.ajax({
